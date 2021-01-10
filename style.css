@@ -181,5 +181,16 @@ body {
     
 }
 
+.card {
+    background-color: green;
+    color: green;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+    border:black solid;
+    float: left;
+    width: 100px;
+    height: 100px;
+    float: left;
 
 
