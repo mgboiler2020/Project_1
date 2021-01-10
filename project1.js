@@ -4,6 +4,7 @@ console.log("it works3")
 
 
 //testing selecting and changing card
+l
 
 let card1 = document.querySelector('#card1');
 let card2 = document.querySelector('#card2');
@@ -23,6 +24,14 @@ console.log(div[0]);
 console.log(div);
 console.log(card1.innerText);
 
+let card = document.getElementsByClassName('card');
+let i = 0;
+    for (let i = 0; i < cardlength; i++) {
+    card[1].addEventListener('click', function() {
+        card.style.color = 'white';
+})
+
+    }
 
 // card1.addEventListener("click", function() {
 //     if (clicks % 2 === 0) {
@@ -49,21 +58,38 @@ console.log(card1.innerText);
 
 
 
-let card = document.querySelector('div');
+//let card = document.querySelector('div');
 
-        card.addEventListener('click', function() {
-            card.style.color = 'white';
+let interval = setInterval(flipped, 5000);
+//card1 click
+        card1.addEventListener('click', function() {
+            card1.style.color = 'white';
 
         })
     
 
         function flipped() {
-            card.style.color = 'green';
+            card1.style.color = 'green';
 
             
         }
         
-        let interval = setInterval(flipped, 5000);
+        
+
+//card2 click        
+        card2.addEventListener('click', function() {
+            card2.style.color = 'white';
+
+        })
+    
+
+        function flipped() {
+            card2.style.color = 'green';
+
+            
+        }
+        
+ //       let interval = setInterval(flipped, 5000);
 
    //testing code above          
            //}
