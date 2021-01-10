@@ -13,7 +13,7 @@ body {
     height: width
 }
 
-.card {
+#card1 {
     background-color: green;
     color: green;
     font-size: 50px;
@@ -24,13 +24,159 @@ body {
     width: 100px;
     height: 100px;
     float: left;
-
-    
-
     
 }
 
-text  {
+#card2 {
+    background-color: green;
+    color: green;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+    border:black solid;
+    float: left;
+    width: 100px;
+    height: 100px;
+    float: left;
+    
+}
 
-    color: white;
+#card3 {
+    background-color: green;
+    color: green;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+    border:black solid;
+    float: left;
+    width: 100px;
+    height: 100px;
+    float: left;
+    
+}
+
+#card4 {
+    background-color: green;
+    color: green;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+    border:black solid;
+    float: left;
+    width: 100px;
+    height: 100px;
+    float: left;
+    
+}
+
+#card5 {
+    background-color: green;
+    color: green;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+    border:black solid;
+    float: left;
+    width: 100px;
+    height: 100px;
+    float: left;
+    
+}
+
+#card6 {
+    background-color: green;
+    color: green;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+    border:black solid;
+    float: left;
+    width: 100px;
+    height: 100px;
+    float: left;
+    
+}
+
+#card7 {
+    background-color: green;
+    color: green;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+    border:black solid;
+    float: left;
+    width: 100px;
+    height: 100px;
+    float: left;
+    
+}
+
+#card8 {
+    background-color: green;
+    color: green;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+    border:black solid;
+    float: left;
+    width: 100px;
+    height: 100px;
+    float: left;
+    
+}
+
+#card9 {
+    background-color: green;
+    color: green;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+    border:black solid;
+    float: left;
+    width: 100px;
+    height: 100px;
+    float: left;
+    
+}
+
+#card10 {
+    background-color: green;
+    color: green;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+    border:black solid;
+    float: left;
+    width: 100px;
+    height: 100px;
+    float: left;
+    
+}
+
+#card11 {
+    background-color: green;
+    color: green;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+    border:black solid;
+    float: left;
+    width: 100px;
+    height: 100px;
+    float: left;
+    
+}
+
+#card12 {
+    background-color: green;
+    color: green;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+    border:black solid;
+    float: left;
+    width: 100px;
+    height: 100px;
+    float: left;
+    
 }
