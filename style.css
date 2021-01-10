@@ -1,0 +1,36 @@
+body {
+    background-color: lightskyblue;
+    max-width: 400px;
+    max-height: 400px;
+
+}
+
+.game-board {
+    background-color: lightskyblue;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    height: width
+}
+
+.card {
+    background-color: green;
+    color: green;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+    border:black solid;
+    float: left;
+    width: 100px;
+    height: 100px;
+    float: left;
+
+    
+
+    
+}
+
+text  {
+
+    color: white;
+}
