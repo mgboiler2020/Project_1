@@ -60,7 +60,7 @@ let i = 0;
 
 //let card = document.querySelector('div');
 
-let interval = setInterval(flipped, 5000);
+//let interval = setInterval(flipped, 5000);
 //card1 click
         card1.addEventListener('click', function() {
             card1.style.color = 'white';
@@ -68,6 +68,7 @@ let interval = setInterval(flipped, 5000);
         })
     
 
+        let interval = setInterval(flipped, 5000);
         function flipped() {
             card1.style.color = 'green';
 
@@ -116,7 +117,7 @@ let interval = setInterval(flipped, 5000);
 
     //card5 click
         card5.addEventListener('click', function() {
-            card4.style.color = 'white';
+            card5.style.color = 'white';
 
         })
 
@@ -136,6 +137,78 @@ let interval = setInterval(flipped, 5000);
 
         function flipped() {
             card6.style.color = 'green';
+
+            
+        }
+    //card7 click
+         card7.addEventListener('click', function() {
+            card7.style.color = 'white';
+
+        })
+
+
+        function flipped() {
+            card7.style.color = 'green';
+
+            
+        }
+    //card8 click
+         card8.addEventListener('click', function() {
+            card8.style.color = 'white';
+
+        })
+
+
+        function flipped() {
+            card8.style.color = 'green';
+
+            
+        }
+    //card9 click
+        card9.addEventListener('click', function() {
+            card9.style.color = 'white';
+
+        })
+
+
+        function flipped() {
+            card9.style.color = 'green';
+
+            
+        }
+    //card10 click
+        card10.addEventListener('click', function() {
+            card10.style.color = 'white';
+
+        })
+
+
+        function flipped() {
+            card10.style.color = 'green';
+
+            
+        }
+    //card11 click
+        card11.addEventListener('click', function() {
+            card11.style.color = 'white';
+
+        })
+
+
+        function flipped() {
+            card11.style.color = 'green';
+
+            
+        }
+    //card12 click
+        card12.addEventListener('click', function() {
+            card12.style.color = 'white';
+
+        })
+
+
+        function flipped() {
+            card12.style.color = 'green';
 
             
         }
