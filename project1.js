@@ -21,6 +21,7 @@ let clicks = 0;
 let div = document.querySelectorAll('div');
 console.log(div[0]);
 console.log(div);
+console.log(card1.innerText);
 
 
 // card1.addEventListener("click", function() {
@@ -48,20 +49,21 @@ console.log(div);
 
 
 
+let card = document.querySelector('div');
 
-        // card.addEventListener('click', function() {
-        //     card.style.color = 'white';
+        card.addEventListener('click', function() {
+            card.style.color = 'white';
 
-        // })
+        })
+    
 
-
-        // function flipped() {
-        //     card.style.color = 'green';
+        function flipped() {
+            card.style.color = 'green';
 
             
-        // }
+        }
         
-        // let interval = setInterval(flipped, 5000);
+        let interval = setInterval(flipped, 5000);
 
    //testing code above          
            //}
