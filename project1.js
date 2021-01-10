@@ -70,6 +70,10 @@ console.log(card1.innerText);
 
 //let card = document.querySelector('div');
 
+
+//Trying to figure out a way to arrary this info below and keep a winning pair of picks from turning back to green.
+//Need to limit picks to two at time.  research on Monday.
+
 let interval1 = setInterval(flipped1, 5000);
 //card1 click
         card1.addEventListener('click', function() {
