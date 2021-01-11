@@ -4,6 +4,8 @@ console.log("it works3")
 
 
 //testing selecting and changing card
+
+//DECLARED VARIABLES
 let card = document.querySelector('.card');
 
 let card1 = document.querySelector('#card1');
@@ -23,18 +25,20 @@ let div = document.querySelectorAll('div');
 
 //WINNING COMBOS
 
-let win1 = (card1 == card2);
-let win2 = (card3 == card4);
-let win3 = (card5 == card6);
-let win4 = (card7 == card8);
-let win5 = (card9 == card10);
-let win6 = (card11 == card12);
+let win1 = (card1 && card2);
+let win2 = (card3 && card4);
+let win3 = (card5 && card6);
+let win4 = (card7 && card8);
+let win5 = (card9 && card10);
+let win6 = (card11 && card12);
 
+
+//CONSOLE LOGS
 console.log(div[0]);
 console.log(div);
 console.log(card1.innerText);
 
-//FOR loop
+//FOR loop trial
 // let i = 0;
 //     for (let i = 0; i < 12; i++) {
 //     card.addEventListener('click', function() {
