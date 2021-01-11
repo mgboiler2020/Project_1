@@ -5,7 +5,7 @@ console.log("it works3")
 
 //testing selecting and changing card
 
-//DECLARED VARIABLES
+//DECLARED VARIABLES BELOW
 let card = document.querySelector('.card');
 
 let card1 = document.querySelector('#card1');
@@ -22,6 +22,11 @@ let card11 = document.querySelector('#card11');
 let card12 = document.querySelector('#card12');
 let clicks = 0;
 let div = document.querySelectorAll('div');
+
+
+//VARIABLES SANDBOX
+
+
 
 //WINNING COMBOS (BOOLEAN VARIABLES)
 
@@ -44,9 +49,9 @@ console.log(card1.innerText);
 //Trying to figure out a way to arrary this info below and keep a winning pair of picks from turning back to green.
 //Need to limit picks to two at time.  research on Monday.
 
-//BELOW ARE THE EVENTLISTENERS
+//BELOW ARE THE EVENTLISTENERS (ON EACH CARD)
 
-let interval1 = setInterval(flipped1, 5000);
+        let interval1 = setInterval(flipped1, 5000);
 //card1 click
         card1.addEventListener('click', function() {
             card1.style.color = 'white';
@@ -214,14 +219,11 @@ let interval1 = setInterval(flipped1, 5000);
             
         }
         
-//  let interval = setInterval(flipped, 5000);
 
-   //testing code above          
-           //}
-           
-           //let interval = setInterval(transitionSlide, 5000);
 
 //SANDBOX BELOW
+
+
 
 //FOR loop trial
 // let i = 0;
@@ -258,3 +260,10 @@ let interval1 = setInterval(flipped1, 5000);
 
 
 //let card = document.querySelector('div');
+
+//  let interval = setInterval(flipped, 5000);
+
+   //testing code above          
+           //}
+           
+           //let interval = setInterval(transitionSlide, 5000);
