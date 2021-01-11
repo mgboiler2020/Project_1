@@ -6,7 +6,8 @@ console.log("it works3")
 //testing selecting and changing card
 
 //DECLARED VARIABLES BELOW
-let card = document.querySelector('.card');
+let card = document.querySelectorAll('.card');
+let cards = document.querySelectorAll('class');
 
 let card1 = document.querySelector('#card1');
 let card2 = document.querySelector('#card2');
@@ -22,11 +23,17 @@ let card11 = document.querySelector('#card11');
 let card12 = document.querySelector('#card12');
 
 let clicks = 0;
+let turn1 = 0;
+let turn2 = 0;
+
 let div = document.querySelectorAll('div');
+
+//ARRAY allCards
+let allCards = [card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12];
+console.log(allCards);
 
 
 //VARIABLES SANDBOX
-
 
 
 //WINNING COMBOS (BOOLEAN VARIABLES) MAYBE NOT REQUIRED?
@@ -48,6 +55,44 @@ console.log(card2);
 console.log(card2.innerText);
 console.log(card3);
 console.log(card3.innerText);
+
+// CODE SANDBOX:
+// console.log(allCards);
+// let i = 0;
+//     for (let i = 0; i < allCards.length; i++) {
+//     allCards().addEventListener('click', function() {
+//         allCards().value.style.color = 'white';
+        
+// })
+
+//     }
+
+// card1.addEventListener("click", function() {
+//     if (clicks % 2 === 0) {
+//         clicks++
+//         card1.style.color = 'white';
+
+//     }
+//     else if (clicks % 2 === 1) {
+//         clicks--
+//         card1.style.backgroundColor = 'white';
+//     }
+
+//     let interval1 = setInterval(flipped1, 5000);
+//     //card1 click
+//             card1.addEventListener('click', function() {
+//                 card1.style.color = 'white';
+    
+//             })
+        
+    
+           
+//             function flipped1() {
+//                 card1.style.color = 'green';
+    
+                
+//             }
+//         })
 
 
 
@@ -100,134 +145,132 @@ console.log(card3.innerText);
             
         }
         
-        let interval4 = setInterval(flipped4, 5000);
-//card4 click
-        card4.addEventListener('click', function() {
-            card4.style.color = 'white';
+//         let interval4 = setInterval(flipped4, 5000);
+// //card4 click
+//         card4.addEventListener('click', function() {
+//             card4.style.color = 'white';
 
-        })
-
-
-        function flipped4() {
-            card4.style.color = 'green';
-
-            
-        }
-        let interval5 = setInterval(flipped5, 5000);
-    //card5 click
-        card5.addEventListener('click', function() {
-            card5.style.color = 'white';
-
-        })
+//         })
 
 
-        function flipped5() {
-            card5.style.color = 'green';
+//         function flipped4() {
+//             card4.style.color = 'green';
 
             
-        }
+//         }
+//         let interval5 = setInterval(flipped5, 5000);
+//     //card5 click
+//         card5.addEventListener('click', function() {
+//             card5.style.color = 'white';
 
-        let interval6 = setInterval(flipped6, 5000);
-    //card6 click
-        card6.addEventListener('click', function() {
-            card6.style.color = 'white';
-
-        })
-
-
-        function flipped6() {
-            card6.style.color = 'green';
-
-            
-        }
-
-        let interval7 = setInterval(flipped7, 5000);
-    //card7 click
-         card7.addEventListener('click', function() {
-            card7.style.color = 'white';
-
-        })
+//         })
 
 
-        function flipped7() {
-            card7.style.color = 'green';
+//         function flipped5() {
+//             card5.style.color = 'green';
 
             
-        }
+//         }
 
-        let interval8 = setInterval(flipped8, 5000);
-    //card8 click
-         card8.addEventListener('click', function() {
-            card8.style.color = 'white';
+//         let interval6 = setInterval(flipped6, 5000);
+//     //card6 click
+//         card6.addEventListener('click', function() {
+//             card6.style.color = 'white';
 
-        })
-
-
-        function flipped8() {
-            card8.style.color = 'green';
-
-            
-        }
-
-        let interval9 = setInterval(flipped9, 5000);
-    //card9 click
-        card9.addEventListener('click', function() {
-            card9.style.color = 'white';
-
-        })
+//         })
 
 
-        function flipped9() {
-            card9.style.color = 'green';
+//         function flipped6() {
+//             card6.style.color = 'green';
 
             
-        }
+//         }
 
-        let interval10 = setInterval(flipped10, 5000);
-    //card10 click
-        card10.addEventListener('click', function() {
-            card10.style.color = 'white';
+//         let interval7 = setInterval(flipped7, 5000);
+//     //card7 click
+//          card7.addEventListener('click', function() {
+//             card7.style.color = 'white';
 
-        })
-
-
-        function flipped10() {
-            card10.style.color = 'green';
-
-            
-        }
-
-        let interval11 = setInterval(flipped11, 5000);
-    //card11 click
-        card11.addEventListener('click', function() {
-            card11.style.color = 'white';
-
-        })
+//         })
 
 
-        function flipped11() {
-            card11.style.color = 'green';
+//         function flipped7() {
+//             card7.style.color = 'green';
 
             
-        }
+//         }
 
-        let interval12 = setInterval(flipped12, 5000);
-    //card12 click
-        card12.addEventListener('click', function() {
-            card12.style.color = 'white';
+//         let interval8 = setInterval(flipped8, 5000);
+//     //card8 click
+//          card8.addEventListener('click', function() {
+//             card8.style.color = 'white';
 
-        })
+//         })
 
 
-        function flipped12() {
-            card12.style.color = 'green';
+//         function flipped8() {
+//             card8.style.color = 'green';
 
             
-        }
+//         }
+
+//         let interval9 = setInterval(flipped9, 5000);
+//     //card9 click
+//         card9.addEventListener('click', function() {
+//             card9.style.color = 'white';
+
+//         })
+
+
+//         function flipped9() {
+//             card9.style.color = 'green';
+
+            
+//         }
+
+//         let interval10 = setInterval(flipped10, 5000);
+//     //card10 click
+//         card10.addEventListener('click', function() {
+//             card10.style.color = 'white';
+
+//         })
+
+
+//         function flipped10() {
+//             card10.style.color = 'green';
+
+            
+//         }
+
+//         let interval11 = setInterval(flipped11, 5000);
+//     //card11 click
+//         card11.addEventListener('click', function() {
+//             card11.style.color = 'white';
+
+//         })
+
+
+//         function flipped11() {
+//             card11.style.color = 'green';
+
+            
+//         }
+
+//         let interval12 = setInterval(flipped12, 5000);
+//     //card12 click
+//         card12.addEventListener('click', function() {
+//             card12.style.color = 'white';
+
+//         })
+
+
+//         function flipped12() {
+//             card12.style.color = 'green';
+
+            
+//         }
         
 
-
-//SANDBOX BELOW
 
 
 
