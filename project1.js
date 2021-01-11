@@ -20,6 +20,7 @@ let card9 = document.querySelector('#card9');
 let card10 = document.querySelector('#card10');
 let card11 = document.querySelector('#card11');
 let card12 = document.querySelector('#card12');
+
 let clicks = 0;
 let div = document.querySelectorAll('div');
 
@@ -28,7 +29,7 @@ let div = document.querySelectorAll('div');
 
 
 
-//WINNING COMBOS (BOOLEAN VARIABLES)
+//WINNING COMBOS (BOOLEAN VARIABLES) MAYBE NOT REQUIRED?
 
 let win1 = (card1 && card2);
 let win2 = (card3 && card4);
@@ -41,7 +42,12 @@ let win6 = (card11 && card12);
 //CONSOLE LOGS
 console.log(div[0]);
 console.log(div);
+console.log(card1);
 console.log(card1.innerText);
+console.log(card2);
+console.log(card2.innerText);
+console.log(card3);
+console.log(card3.innerText);
 
 
 
@@ -224,6 +230,8 @@ console.log(card1.innerText);
 //SANDBOX BELOW
 
 
+
+//JUNK CODE BELOW://
 
 //FOR loop trial
 // let i = 0;
