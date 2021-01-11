@@ -23,7 +23,7 @@ let card12 = document.querySelector('#card12');
 let clicks = 0;
 let div = document.querySelectorAll('div');
 
-//WINNING COMBOS
+//WINNING COMBOS (BOOLEAN VARIABLES)
 
 let win1 = (card1 && card2);
 let win2 = (card3 && card4);
