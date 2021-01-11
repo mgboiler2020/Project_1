@@ -38,45 +38,13 @@ console.log(div[0]);
 console.log(div);
 console.log(card1.innerText);
 
-//FOR loop trial
-// let i = 0;
-//     for (let i = 0; i < 12; i++) {
-//     card.addEventListener('click', function() {
-//         card.style.color = 'white';
-// })
 
-//     }
-
-// card1.addEventListener("click", function() {
-//     if (clicks % 2 === 0) {
-//         clicks++
-//         card1.style.color = 'white';
-
-//     }
-//     else if (clicks % 2 === 1) {
-//         clicks--
-//         card1.style.backgroundColor = 'white';
-//     }}
-
-// //let square = document.querySelectorAll('.square');
-//         let reset = document.querySelector('#reset');
-// if (clicks % 2 === 0) {
-//     clicks++
-//     card.style.color = 'white';
-
-// }
-// else if (clicks % 2 === 1) {
-//     clicks--
-//     card.style.color = 'white';
-// }
-
-
-
-//let card = document.querySelector('div');
 
 
 //Trying to figure out a way to arrary this info below and keep a winning pair of picks from turning back to green.
 //Need to limit picks to two at time.  research on Monday.
+
+//BELOW ARE THE EVENTLISTENERS
 
 let interval1 = setInterval(flipped1, 5000);
 //card1 click
@@ -252,3 +220,41 @@ let interval1 = setInterval(flipped1, 5000);
            //}
            
            //let interval = setInterval(transitionSlide, 5000);
+
+//SANDBOX BELOW
+
+//FOR loop trial
+// let i = 0;
+//     for (let i = 0; i < 12; i++) {
+//     card.addEventListener('click', function() {
+//         card.style.color = 'white';
+// })
+
+//     }
+
+// card1.addEventListener("click", function() {
+//     if (clicks % 2 === 0) {
+//         clicks++
+//         card1.style.color = 'white';
+
+//     }
+//     else if (clicks % 2 === 1) {
+//         clicks--
+//         card1.style.backgroundColor = 'white';
+//     }}
+
+// //let square = document.querySelectorAll('.square');
+//         let reset = document.querySelector('#reset');
+// if (clicks % 2 === 0) {
+//     clicks++
+//     card.style.color = 'white';
+
+// }
+// else if (clicks % 2 === 1) {
+//     clicks--
+//     card.style.color = 'white';
+// }
+
+
+
+//let card = document.querySelector('div');
