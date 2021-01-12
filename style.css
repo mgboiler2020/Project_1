@@ -5,6 +5,9 @@ body {
 
 }
 
+
+
+
 .game-board {
     background-color: lightskyblue;
     display: flex;
@@ -13,9 +16,10 @@ body {
     height: width
 }
 
+
 .cardDeck {
-    background-color: green;
-    color: green;
+    background-color: purple;
+    color: white;
     font-size: 50px;
     text-align: center;
     align-content: center;
@@ -26,13 +30,72 @@ body {
     float: left;
 
 }
-.cardDeck.flip {
-    transform: rotateY(180deg);
+.cardDeck.trans {
+    /* transform: rotateY(180deg);*/
+    opacity: 30%;
 }
 
 
 
+
+
 .cardFront {
+    background-color: purple;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+    border:black solid;
+    float: left;
+    width: 100px;
+    height: 100px;
+    float: left;
+    position: absolute;
+    backface-visibility: visible;
+    /* transform: rotateY(180deg); */
+    
+
+
+    
+    
+}
+
+.cardBack {
+    background-color: purple;
+    color: purple;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+    border:black solid;
+    float: left;
+    width: 100px;
+    height: 100px;
+    float: left;
+    position: absolute;
+   
+
+    
+}
+
+.cardBack.trans {
+    background-color: white;
+    color: purple;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+    border:black solid;
+    float: left;
+    width: 100px;
+    height: 100px;
+    float: left;
+    position: absolute;
+    opacity: 0%;
+   
+
+    
+}
+/* 
+.cardBack, .cardFront {
     background-color: green;
     color: white;
     font-size: 50px;
@@ -44,23 +107,9 @@ body {
     height: 100px;
     float: left;
     position: absolute;
-    
-}
-
-.cardBack {
-    background-color: green;
-    color: green;
-    font-size: 50px;
-    text-align: center;
-    align-content: center;
-    border:black solid;
-    float: left;
-    width: 100px;
-    height: 100px;
-    float: left;
-    position: absolute;
-    
-}
+    opacity: 50;
+    backface-visibility: hidden;
+} */
 
 /* #card3 {
     background-color: green;

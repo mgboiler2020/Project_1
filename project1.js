@@ -8,17 +8,38 @@ console.log("it works3")
 //I USED THIS EXAMPLE AS REFERENCE FOR STRUCTUING HTML AND 
 //SOME OF THE JAVASCRIPT METHODS:
 //https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae
+//WHAT IS LEFT TO DO (as of 12:30PM Tuesday)
+//1) make backCard transpart upon click.  Use opacity: 0% in CSS
+//2) capture match pair with two variables.  One clicked = true, the other = false.
+//3) make unmatched pairs turn opacity = 100%
+//4) make sure only two cards can be selected at one time.
 
 //VARIABLES AND CODE
 
-let allCards = document.querySelectorAll('.cardDeck');
+// let allCards = document.querySelectorAll('.cardDeck');
+// let allCards = document.querySelectorAll('.testCard');
+let backTrans = document.querySelectorAll('.cardBack');
+let cardTrans = false;
+let firstSel, secondSel;
 
-function flipped() {
-    this.classList.toggle('flip');
+function transparent() {
+    // this.classList.toggle('trans');
+    this.classList.add('trans');
+    if (!cardTrans) {
+        cardTrans = true;
+        firstSel = this;
+    }
 
 }
 
-allCards.forEach(card => card.addEventListener('click', flipped));
+backTrans.forEach(card => card.addEventListener('click', transparent));
+
+
+
+
+
+
+
 
 
 
