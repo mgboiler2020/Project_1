@@ -10,7 +10,7 @@ console.log("it works3")
 //https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae
 //WHAT IS LEFT TO DO (as of 12:30PM Tuesday)
 //1) make backCard transpart upon click.  Use opacity: 0% in CSS
-//2) capture match pair with two variables.  One clicked = true, the other = false.
+//2) capture match pair
 //3) make unmatched pairs turn opacity = 100%
 //4) make sure only two cards can be selected at one time.
 
@@ -42,15 +42,16 @@ if (firstSel.dataset.display === secondSel.dataset.display) {
 removeClickEvent();
 return;
 }
-
+hideLetter();
 removeClickEvent();
 
 }
 function removeClickEvent() {
     firstSel.removeEventListener('click', transparent);
+    secondSel.removeEventListener('click', transparent);
 }
 
-hideLetter();
+
 
 
 ////used w3schools.com to look up setTimeout info and syntax.  This turns the cards opaque if the two clicks aren't a match
@@ -59,7 +60,7 @@ function hideLetter() {
     setTimeout(function() {
         firstSel.classList.remove('trans');
         secondSel.classList.remove('trans');
-    }, 2000);
+    }, 4000);
 }
 
 
