@@ -42,7 +42,7 @@ if (firstSel.dataset.display === secondSel.dataset.display) {
 removeClickEvent();
 return;
 }
-hideLetter();
+
 removeClickEvent();
 
 }
@@ -51,7 +51,7 @@ function removeClickEvent() {
     secondSel.removeEventListener('click', transparent);
 }
 
-
+hideLetter();
 
 
 ////used w3schools.com to look up setTimeout info and syntax.  This turns the cards opaque if the two clicks aren't a match
