@@ -13,7 +13,7 @@ body {
     height: width
 }
 
-#card1 {
+.cardFront {
     background-color: green;
     color: green;
     font-size: 50px;
@@ -27,7 +27,7 @@ body {
     
 }
 
-#card2 {
+.cardBack {
     background-color: green;
     color: green;
     font-size: 50px;
@@ -41,7 +41,7 @@ body {
     
 }
 
-#card3 {
+/* #card3 {
     background-color: green;
     color: green;
     font-size: 50px;
@@ -179,7 +179,7 @@ body {
     height: 100px;
     float: left;
     
-}
+} */
 
 .card {
     background-color: green;

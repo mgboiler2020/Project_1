@@ -22,16 +22,15 @@ let card10 = document.querySelector('#card10');
 let card11 = document.querySelector('#card11');
 let card12 = document.querySelector('#card12');
 
-let clicks = 0;
-let turn1 = 0;
-let turn2 = 0;
 
-let div = document.querySelectorAll('div');
+
+//let div = document.querySelectorAll('div');
 
 //ARRAY allCards
 let allCards = [card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12];
 console.log(allCards);
 
+let pairCards = [];
 
 //VARIABLES SANDBOX
 
@@ -59,40 +58,40 @@ console.log(card3.innerText);
 // CODE SANDBOX:
 // console.log(allCards);
 // let i = 0;
-//     for (let i = 0; i < allCards.length; i++) {
-//     allCards().addEventListener('click', function() {
-//         allCards().value.style.color = 'white';
+    for (let i = 0; i < allCards.length; i++) {
+    allCards.addEventListener('click', function() {
+        allCards.value.style.color = 'white';
         
-// })
+})
 
-//     }
+    }
 
-// card1.addEventListener("click", function() {
-//     if (clicks % 2 === 0) {
-//         clicks++
-//         card1.style.color = 'white';
+card1.addEventListener("click", function() {
+    if (clicks % 2 === 0) {
+        clicks++
+        card1.style.color = 'white';
 
-//     }
-//     else if (clicks % 2 === 1) {
-//         clicks--
-//         card1.style.backgroundColor = 'white';
-//     }
+    }
+    else if (clicks % 2 === 1) {
+        clicks--
+        card1.style.backgroundColor = 'white';
+    }
 
-//     let interval1 = setInterval(flipped1, 5000);
-//     //card1 click
-//             card1.addEventListener('click', function() {
-//                 card1.style.color = 'white';
+    let interval1 = setInterval(flipped1, 5000);
+    //card1 click
+            card1.addEventListener('click', function() {
+                card1.style.color = 'white';
     
-//             })
+            })
         
     
            
-//             function flipped1() {
-//                 card1.style.color = 'green';
+            function flipped1() {
+                card1.style.color = 'green';
     
                 
-//             }
-//         })
+            }
+        })
 
 
 
@@ -276,6 +275,11 @@ console.log(card3.innerText);
 
 //JUNK CODE BELOW://
 
+
+//for past idea.  do not need
+// let clicks = 0;
+// let turn1 = 0;
+// let turn2 = 0;
 //FOR loop trial
 // let i = 0;
 //     for (let i = 0; i < 12; i++) {
