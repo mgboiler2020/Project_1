@@ -1,97 +1,121 @@
 console.log("it works3")
+
+
+//NOTE: AFTER LATE MONDAY AFTERNOON MEETING W/ DAVID IT WAS EVIDENT I NEEDED TO 
+//RESTRUCTURE MY HTML AND START OVER WITH JAVASCRIPT TO MAKE THE GAME WORK COMPLETELY.
+//I WAS GOING IN THE WRONG DIRECTION.
+
+//I USED THIS EXAMPLE AS REFERENCE FOR STRUCTUING HTML AND 
+//SOME OF THE JAVASCRIPT METHODS:
+//https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae
+
+//VARIABLES
+
+let card = document.querySelectorAll('.card');
+
+
+
+
+
+
+//NOTE: ALL CODE AND NOTES BELOW ARE FROM PRE-REFACTOR AND ONLY FOR REFERENCE
+
+
 //IF innerText of id = the innerText of the second id then do not
 //change color of text back to green with setInterval
 
 
 //testing selecting and changing card
 
-//DECLARED VARIABLES BELOW
-let card = document.querySelectorAll('.card');
-let cards = document.querySelectorAll('class');
-
-let card1 = document.querySelector('#card1');
-let card2 = document.querySelector('#card2');
-let card3 = document.querySelector('#card3');
-let card4 = document.querySelector('#card4');
-let card5 = document.querySelector('#card5');
-let card6 = document.querySelector('#card6');
-let card7 = document.querySelector('#card7');
-let card8 = document.querySelector('#card8');
-let card9 = document.querySelector('#card9');
-let card10 = document.querySelector('#card10');
-let card11 = document.querySelector('#card11');
-let card12 = document.querySelector('#card12');
 
 
+// //DECLARED VARIABLES BELOW
+// let card = document.querySelectorAll('.card');
+// let cards = document.querySelectorAll('class');
 
-//let div = document.querySelectorAll('div');
-
-//ARRAY allCards
-let allCards = [card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12];
-console.log(allCards);
-
-let pairCards = [];
-
-//VARIABLES SANDBOX
-
-
-//WINNING COMBOS (BOOLEAN VARIABLES) MAYBE NOT REQUIRED?
-
-let win1 = (card1 && card2);
-let win2 = (card3 && card4);
-let win3 = (card5 && card6);
-let win4 = (card7 && card8);
-let win5 = (card9 && card10);
-let win6 = (card11 && card12);
+// let card1 = document.querySelector('#card1');
+// let card2 = document.querySelector('#card2');
+// let card3 = document.querySelector('#card3');
+// let card4 = document.querySelector('#card4');
+// let card5 = document.querySelector('#card5');
+// let card6 = document.querySelector('#card6');
+// let card7 = document.querySelector('#card7');
+// let card8 = document.querySelector('#card8');
+// let card9 = document.querySelector('#card9');
+// let card10 = document.querySelector('#card10');
+// let card11 = document.querySelector('#card11');
+// let card12 = document.querySelector('#card12');
 
 
-//CONSOLE LOGS
-console.log(div[0]);
-console.log(div);
-console.log(card1);
-console.log(card1.innerText);
-console.log(card2);
-console.log(card2.innerText);
-console.log(card3);
-console.log(card3.innerText);
 
-// CODE SANDBOX:
+// //let div = document.querySelectorAll('div');
+
+// //ARRAY allCards
+// let allCards = [card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12];
 // console.log(allCards);
-// let i = 0;
-    for (let i = 0; i < allCards.length; i++) {
-    allCards.addEventListener('click', function() {
-        allCards.value.style.color = 'white';
+
+// let pairCards = [];
+
+// //VARIABLES SANDBOX
+
+
+// //WINNING COMBOS (BOOLEAN VARIABLES) MAYBE NOT REQUIRED?
+
+// let win1 = (card1 && card2);
+// let win2 = (card3 && card4);
+// let win3 = (card5 && card6);
+// let win4 = (card7 && card8);
+// let win5 = (card9 && card10);
+// let win6 = (card11 && card12);
+
+
+// //CONSOLE LOGS
+// console.log(div[0]);
+// console.log(div);
+// console.log(card1);
+// console.log(card1.innerText);
+// console.log(card2);
+// console.log(card2.innerText);
+// console.log(card3);
+// console.log(card3.innerText);
+
+// // CODE SANDBOX:
+// // console.log(allCards);
+// // let i = 0;
+//     for (let i = 0; i < allCards.length; i++) {
+//     allCards.addEventListener('click', function() {
+//         allCards.value.style.color = 'white';
         
-})
+// })
 
-    }
+//     }
 
-card1.addEventListener("click", function() {
-    if (clicks % 2 === 0) {
-        clicks++
-        card1.style.color = 'white';
+// card1.addEventListener("click", function() {
+//     if (clicks % 2 === 0) {
+//         clicks++
+//         card1.style.color = 'white';
 
-    }
-    else if (clicks % 2 === 1) {
-        clicks--
-        card1.style.backgroundColor = 'white';
-    }
+//     }
+//     else if (clicks % 2 === 1) {
+//         clicks--
+//         card1.style.backgroundColor = 'white';
+//     }
 
-    let interval1 = setInterval(flipped1, 5000);
-    //card1 click
-            card1.addEventListener('click', function() {
-                card1.style.color = 'white';
+//     let interval1 = setInterval(flipped1, 5000);
+//     //card1 click
+//             card1.addEventListener('click', function() {
+//                 card1.style.color = 'white';
     
-            })
+//             })
         
     
            
-            function flipped1() {
-                card1.style.color = 'green';
+//             function flipped1() {
+//                 card1.style.color = 'green';
     
                 
-            }
-        })
+//             }
+//         })
 
 
 
