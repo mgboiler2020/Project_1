@@ -19,18 +19,49 @@ console.log("it works3")
 // let allCards = document.querySelectorAll('.cardDeck');
 // let allCards = document.querySelectorAll('.testCard');
 let backTrans = document.querySelectorAll('.cardBack');
-let cardTrans = false;
+let isTrans = false;
 let firstSel, secondSel;
+
 
 function transparent() {
     // this.classList.toggle('trans');
     this.classList.add('trans');
-    if (!cardTrans) {
-        cardTrans = true;
+    if (!isTrans) {
+        isTrans = true;
         firstSel = this;
+        return;
     }
+secondSel = this;
+isTrans = false;
+
+isMatch();
 
 }
+function isMatch() {
+if (firstSel.dataset.display === secondSel.dataset.display) {
+removeClickEvent();
+return;
+}
+
+removeClickEvent();
+
+}
+function removeClickEvent() {
+    firstSel.removeEventListener('click', transparent);
+}
+
+hideLetter();
+
+
+////used w3schools.com to look up setTimeout info and syntax.  This turns the cards opaque if the two clicks aren't a match
+//Suggested by Neal
+function hideLetter() {
+    setTimeout(function() {
+        firstSel.classList.remove('trans');
+        secondSel.classList.remove('trans');
+    }, 2000);
+}
+
 
 backTrans.forEach(card => card.addEventListener('click', transparent));
 
