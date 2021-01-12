@@ -13,7 +13,7 @@ body {
     height: width
 }
 
-.card {
+.cardDeck {
     background-color: green;
     color: green;
     font-size: 50px;
@@ -26,6 +26,11 @@ body {
     float: left;
 
 }
+.cardDeck.flip {
+    transform: rotateY(180deg);
+}
+
+
 
 .cardFront {
     background-color: green;

@@ -9,16 +9,21 @@ console.log("it works3")
 //SOME OF THE JAVASCRIPT METHODS:
 //https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae
 
-//VARIABLES
+//VARIABLES AND CODE
 
-let card = document.querySelectorAll('.card');
+let allCards = document.querySelectorAll('.cardDeck');
+
+function flipped() {
+    this.classList.toggle('flip');
+
+}
+
+allCards.forEach(card => card.addEventListener('click', flipped));
 
 
 
 
-
-
-//NOTE: ALL CODE AND NOTES BELOW ARE FROM PRE-REFACTOR AND ONLY FOR REFERENCE
+//NOTE: ALL CODE AND NOTES BELOW THIS LINE ARE FROM PRE-REFACTOR AND ONLY FOR REFERENCE
 
 
 //IF innerText of id = the innerText of the second id then do not
@@ -125,53 +130,53 @@ let card = document.querySelectorAll('.card');
 
 //BELOW ARE THE EVENTLISTENERS (ON EACH CARD)
 
-        let interval1 = setInterval(flipped1, 5000);
-//card1 click
-        card1.addEventListener('click', function() {
-            card1.style.color = 'white';
+//         let interval1 = setInterval(flipped1, 5000);
+// //card1 click
+//         card1.addEventListener('click', function() {
+//             card1.style.color = 'white';
 
-        })
+//         })
     
 
        
-        function flipped1() {
-            card1.style.color = 'green';
+//         function flipped1() {
+//             card1.style.color = 'green';
 
             
-        }
+//         }
         
         
-        let interval2 = setInterval(flipped2, 5000);
-//card2 click        
-        card2.addEventListener('click', function() {
-            card2.style.color = 'white';
+//         let interval2 = setInterval(flipped2, 5000);
+// //card2 click        
+//         card2.addEventListener('click', function() {
+//             card2.style.color = 'white';
 
-        })
+//         })
     
 
-        function flipped2() {
-            card2.style.color = 'green';
+//         function flipped2() {
+//             card2.style.color = 'green';
 
             
-        }
-        let interval3 = setInterval(flipped3, 5000);
-//card3 click
-        card3.addEventListener('click', function() {
-            card3.style.color = 'white';
+//         }
+//         let interval3 = setInterval(flipped3, 5000);
+// //card3 click
+//         card3.addEventListener('click', function() {
+//             card3.style.color = 'white';
 
-        })
+//         })
 
 
-        function flipped3() {
-            card3.style.color = 'green';
+//         function flipped3() {
+//             card3.style.color = 'green';
 
             
-        }
+//         }
         
-//         let interval4 = setInterval(flipped4, 5000);
-// //card4 click
-//         card4.addEventListener('click', function() {
-//             card4.style.color = 'white';
+// //         let interval4 = setInterval(flipped4, 5000);
+// // //card4 click
+// //         card4.addEventListener('click', function() {
+// //             card4.style.color = 'white';
 
 //         })
 
