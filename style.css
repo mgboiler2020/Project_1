@@ -31,7 +31,6 @@ body {
 
 }
 .cardDeck.trans {
-    /* transform: rotateY(180deg);*/
     opacity: 30%;
 }
 
@@ -52,7 +51,7 @@ body {
     float: left;
     position: absolute;
     backface-visibility: visible;
-    /* transform: rotateY(180deg); */
+  
     
 
 
@@ -94,161 +93,4 @@ body {
 
     
 }
-/* BELOW IS CSS FOR MY FIRST ATTEPT PRIOR TO REFACTORING
-.cardBack, .cardFront {
-    background-color: green;
-    color: white;
-    font-size: 50px;
-    text-align: center;
-    align-content: center;
-    border:black solid;
-    float: left;
-    width: 100px;
-    height: 100px;
-    float: left;
-    position: absolute;
-    opacity: 50;
-    backface-visibility: hidden;
-} */
-
-/* #card3 {
-    background-color: green;
-    color: green;
-    font-size: 50px;
-    text-align: center;
-    align-content: center;
-    border:black solid;
-    float: left;
-    width: 100px;
-    height: 100px;
-    float: left;
-    
-}
-
-#card4 {
-    background-color: green;
-    color: green;
-    font-size: 50px;
-    text-align: center;
-    align-content: center;
-    border:black solid;
-    float: left;
-    width: 100px;
-    height: 100px;
-    float: left;
-    
-}
-
-#card5 {
-    background-color: green;
-    color: green;
-    font-size: 50px;
-    text-align: center;
-    align-content: center;
-    border:black solid;
-    float: left;
-    width: 100px;
-    height: 100px;
-    float: left;
-    
-}
-
-#card6 {
-    background-color: green;
-    color: green;
-    font-size: 50px;
-    text-align: center;
-    align-content: center;
-    border:black solid;
-    float: left;
-    width: 100px;
-    height: 100px;
-    float: left;
-    
-}
-
-#card7 {
-    background-color: green;
-    color: green;
-    font-size: 50px;
-    text-align: center;
-    align-content: center;
-    border:black solid;
-    float: left;
-    width: 100px;
-    height: 100px;
-    float: left;
-    
-}
-
-#card8 {
-    background-color: green;
-    color: green;
-    font-size: 50px;
-    text-align: center;
-    align-content: center;
-    border:black solid;
-    float: left;
-    width: 100px;
-    height: 100px;
-    float: left;
-    
-}
-
-#card9 {
-    background-color: green;
-    color: green;
-    font-size: 50px;
-    text-align: center;
-    align-content: center;
-    border:black solid;
-    float: left;
-    width: 100px;
-    height: 100px;
-    float: left;
-    
-}
-
-#card10 {
-    background-color: green;
-    color: green;
-    font-size: 50px;
-    text-align: center;
-    align-content: center;
-    border:black solid;
-    float: left;
-    width: 100px;
-    height: 100px;
-    float: left;
-    
-}
-
-#card11 {
-    background-color: green;
-    color: green;
-    font-size: 50px;
-    text-align: center;
-    align-content: center;
-    border:black solid;
-    float: left;
-    width: 100px;
-    height: 100px;
-    float: left;
-    
-}
-
-#card12 {
-    background-color: green;
-    color: green;
-    font-size: 50px;
-    text-align: center;
-    align-content: center;
-    border:black solid;
-    float: left;
-    width: 100px;
-    height: 100px;
-    float: left;
-    
-} */
-
 
