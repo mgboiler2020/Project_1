@@ -28,7 +28,7 @@ let thirdSel = false;
 //NOTE:  When a card/div is clicked this changes the the class of .cardBack to .cardBack.trans
 // which makes the div on top transparent (opacity = 0%), revealing the letter on the bottom div
 function makeTransparent() {
-   if (thirdSel) return; //stops the selection of a third selection until the setTimeout elapses upon mismatched first two selections.
+   if (thirdSel) return; //stops the selection of a third div until the setTimeout elapses upon mismatched first two selections.
         
    this.classList.add('trans');
         if (!isTrans) { //if the card/div is NOT isTrans, then the first selection is allowed/recorded.
