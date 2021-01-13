@@ -35,7 +35,7 @@ function makeTransparent() {
         if (!isTrans) { //the card/div is NOT isTrans.
             isTrans = true;
             firstSel = this; //the div that is selected.  see line 33.
-            return; // function returns the first selection and applies the class change and awaits for second selection
+            return; // function returns the first selection and applies the class change and waits for second selection
             
     }
 secondSel = this; //second selection is recorded and used in makeTranspart function.

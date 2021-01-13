@@ -13,9 +13,25 @@ Link to Game:
 
 https://mgboiler2020.github.io/
 
+
+Tools Needed to Play:
+- Internet Browser
+
+Game Created With:
+- HTML
+- CSS
+- JavaScript
+
+References:
+- https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae
+
+- reference: https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
+
+- https://www.w3schools.com/jsref/jsref_foreach.asp
+
+- w3schools.com used often for various information related to syntax and definitions and function.
+
 Stretch Goals:
-
-
 1) Cards randomly sorted - silver
 2)	Score points for correct pair - silver
 3)  Points increase for consectutive correct choices (1 correct choice - 1 pt, 2 correct choices in a row - 2 pts, and so on) - gold
