@@ -34,10 +34,10 @@ function makeTransparent() {
         if (!isTrans) { //if the card/div is NOT isTrans, then the first selection is allowed/recorded.
             isTrans = true;
             firstSel = this; //the div that is selected.  see line 33.
-            return; // function waits for second selection
+            return; // function returns the first selection and applies the class change and awaits for second selection
             
     }
-secondSel = this; //second selection is recorded 
+secondSel = this; //second selection is recorded and used in makeTranspart function.
 isTrans = false;
 console.log("2 cards selected");
 
@@ -48,25 +48,24 @@ isMatch();
 
 function isMatch() {
 if (firstSel.dataset.display === secondSel.dataset.display) {
-//used data-* to add a searchable0/comparable attribute to the div class in html.  The value entered can be accessed with "dataset" and the attribute entered.
+//used data-* to add a searchable/comparable attribute to the .cardBack class in html.  
+//The attribute value entered can be accessed with "dataset" and the attribute name.
 // reference: https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
     removeClickEvent();
     console.log("cards match");
-//if the first and second selections' data-display values match this calls 
-// the function to remove the eventListener from the two selected divs so they cannot be selected again.  
-// the two matchining divs display a letter and remain visible.
+// If the two selections' data-display values match the if statement calls 
+// the function that removes the eventListener from the two selected divs 
+// so they cannot be selected again.  
+// the two matching divs display a letter and remain visible.
 
 
-//if the selections are not a match the else statement calls the function that removes the .cardBack.trans class added in the makeTransparent function.
+//if the selections are not a match the else statement calls the function 
+//that removes the .cardBack.trans class added in the makeTransparent function.
 } else {
     hideLetter();
     console.log("cards not matched");
-    thirdSel = true; //two selections already made.  Subsequent selectons not allowed until setTimeout elapses
+    thirdSel = true; //two selections are already made.  Subsequent selectons not allowed until setTimeout elapses
 }
-
-
-
-
 
 
 //this removes the listener from the two selected cards to prevent clicking more than once.
@@ -78,10 +77,10 @@ function removeClickEvent() {
 }
 
 
-//if the selections do not match the hideLetter removes the cardBack.trans class from the selected divs
+//If the selections do not match the hideLetter removes the cardBack.trans class from the selected divs
 //and reverts to the original class (making the top div opaque)
-////used w3schools.com to look up setTimeout info and syntax.  This turns the cards opaque if the two clicks aren't a match
-//Suggested by Neal
+////used w3schools.com to look up setTimeout info and syntax for "remove".  This turns the cards opaque if the two clicks aren't a match
+//Suggested by Neal.
 function hideLetter() {
     setTimeout(function() {
         firstSel.classList.remove('trans');
