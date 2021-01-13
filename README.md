@@ -7,7 +7,7 @@ GA Minimal Requirements:
 Pre-load your app with some data, and let the user flip through them quickly (back or front), and use the keyboard flip the card, and to mark whether they got it right or not. Track which cards were incorrect, and re-display them until the user gets them right!
 -------------------------------------
 
-MVP - Each card has a letter.  There are 6 pairs of cards.  There are two divs stacked.  The bottom div displays a letter covered up by the top div  When clicked, the color of top layer div becomes transparent.  A setTimeout turns the letter back to original color if two clicks do not match a pair.  Successful pairing of two cards remain visible on the screen until all choices are correct.
+MVP - Each card has a letter.  There are 6 pairs of cards.  There are two divs/cards stacked.  The bottom div/card displays a letter covered up by the top div.  When clicked, the color of top layer div becomes transparent.  A setTimeout turns the top layer opaque if two clicks do not match a pair.  Successful pairing of two cards remain visible on the screen until all choices are correct.
 
 Link to Game:
 
@@ -36,6 +36,7 @@ Using divs and data attributes I made the structure of two stacked divs.  The to
 
 I started out trying to hardcode all the variables, objects, and eventListeners.  I encountered an impedement which was taking too long resolve (given the time remaining for the project).  I ended up refactoring and using a much more simple path.    
 
+Lesssons Learned:
 This project has taught me the importance of pseudo code and researching prior to building up a javaScript file.  I also learned how to better debug my code and further strengthened my understanding of how the code is behaving.
 
 
