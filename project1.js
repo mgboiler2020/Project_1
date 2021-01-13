@@ -48,7 +48,7 @@ isMatch();
 
 function isMatch() {
 if (firstSel.dataset.display === secondSel.dataset.display) {
-//used data-* to add a searchable/comparable attribute to the div class in html.  The value entered can be accessed with "dataset" and the attribute entered.
+//used data-* to add a searchable0/comparable attribute to the div class in html.  The value entered can be accessed with "dataset" and the attribute entered.
 // reference: https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
     removeClickEvent();
     console.log("cards match");
