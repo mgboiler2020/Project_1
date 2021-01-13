@@ -10,44 +10,48 @@ console.log("it works3")
 //https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae
 
 //WHAT IS LEFT TO DO (as of 12:30PM Tuesday)
-//1) make backCard transpart upon click.  Use opacity: 0% in CSS
+//1)  make backCard transpart upon click.  Use opacity: 0% in CSS 
 //2) capture match pair
 //3) make unmatched pairs turn opacity = 100%
 //4) make sure only two cards can be selected at one time.
+//ITEMS ABOVE WERE COMPLETED SUCCESSFULLY
 
 //VARIABLES AND CODE
 
 
 let backTrans = document.querySelectorAll('.cardBack');
 let isTrans = false;
-
 let firstSel = '';
 let secondSel = '';
+let thirdSel = false; 
 
 //NOTE:  When a card/div is clicked this changes the the class of .cardBack to .cardBack.trans
 // which makes the div on top transparent (opacity = 0%), revealing the letter on the bottom div
 function makeTransparent() {
-   
-    this.classList.add('trans');
-        if (!isTrans) { //if the card/div is NOT isTrans, then the first selection is recorded.
+   if (thirdSel) return; //stops the selection of a third selection until the setTimeout elapses upon mismatched first two selections.
+        
+   this.classList.add('trans');
+        if (!isTrans) { //if the card/div is NOT isTrans, then the first selection is allowed/recorded.
             isTrans = true;
-            firstSel = this;
-            return;
+            firstSel = this; //the div that is selected.  see line 33.
+            return; // function waits for second selection
             
     }
 secondSel = this; //second selection is recorded 
 isTrans = false;
-console.log("in trans function");
+console.log("2 cards selected");
 
 
-//after two selections this calss the function that compares the data-display value on the two cards/divs selected
+//after two selections this calls the function that compares the data-display value on the two cards/divs selected
 isMatch();
 }
-//used data-* to add a searchable/comparable attribute to the div class in html.  The value entered can be accessed with "dataset" and the attribute entered.
-// reference: https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
+
 function isMatch() {
 if (firstSel.dataset.display === secondSel.dataset.display) {
+//used data-* to add a searchable/comparable attribute to the div class in html.  The value entered can be accessed with "dataset" and the attribute entered.
+// reference: https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
     removeClickEvent();
+    console.log("cards match");
 //if the first and second selections' data-display values match this calls 
 // the function to remove the eventListener from the two selected divs so they cannot be selected again.  
 // the two matchining divs display a letter and remain visible.
@@ -56,7 +60,8 @@ if (firstSel.dataset.display === secondSel.dataset.display) {
 //if the selections are not a match the else statement calls the function that removes the .cardBack.trans class added in the makeTransparent function.
 } else {
     hideLetter();
-    console.log("in else statement for Hide Letter");
+    console.log("cards not matched");
+    thirdSel = true; //two selections already made.  Subsequent selectons not allowed until setTimeout elapses
 }
 
 
@@ -68,8 +73,8 @@ if (firstSel.dataset.display === secondSel.dataset.display) {
 function removeClickEvent() {
     firstSel.removeEventListener('click', makeTransparent);
     secondSel.removeEventListener('click', makeTransparent);
-    console.log("prevent click again on same box");
-r
+    console.log("prevent click again on same card");
+
 }
 
 
@@ -81,13 +86,14 @@ function hideLetter() {
     setTimeout(function() {
         firstSel.classList.remove('trans');
         secondSel.classList.remove('trans');
-    }, 3000);
+        thirdSel = false; //allows the second pair of selections
+    }, 2000);
 }
 
 }
-backTrans.forEach(card => card.addEventListener('click', makeTransparent));
+backTrans.forEach(sel => sel.addEventListener('click', makeTransparent));
 // forEach method used instead of an if statement to loop through the div array
-// it calls the card function once for each element (divs)
+// it calls the function once for each element (divs with .cardBack class)
 //reference: https://www.w3schools.com/jsref/jsref_foreach.asp
 
 
