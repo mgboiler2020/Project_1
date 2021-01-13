@@ -12,7 +12,7 @@ console.log("it works3")
 //WHAT IS LEFT TO DO (as of 12:30PM Tuesday)
 //1)  make backCard transpart upon click.  Use opacity: 0% in CSS 
 //2) capture match pair
-//3) make unmatched pairs turn opacity = 100%
+//3) make unmatched pairs turn back to opacity = 100%
 //4) make sure only two cards can be selected at one time.
 //ITEMS ABOVE WERE COMPLETED SUCCESSFULLY
 
