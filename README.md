@@ -16,7 +16,8 @@ Stretch Goals:
 
 1) Cards randomly sorted - silver
 2)	Score points for correct pair - silver
-3)  Points increase for consectutive correct choices (1 correct choice - 1 pt, 2 correct choices in a row - 2 pts, and so on)
+3)  Points increase for consectutive correct choices (1 correct choice - 1 pt, 2 correct choices in a row - 2 pts, and so on) - gold
 4) Animate the click action - gold
 5) Add images for cards - silver
-6) reset board upon completion of 6 matched pairs.
+6) reset board upon completion of 6 matched pairs. - silver
+7) Add styling and box designs that are random when the game is reloaded after a win - gold
