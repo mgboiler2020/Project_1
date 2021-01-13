@@ -32,7 +32,7 @@ function makeTransparent() {
     if (thirdSel) return; //stops the selection of a third div until the setTimeout elapses upon mismatched first two selections.
         
    this.classList.add('trans');
-        if (!isTrans) { //if the card/div is NOT isTrans, then the first selection is allowed/recorded.
+        if (!isTrans) { //the card/div is NOT isTrans.
             isTrans = true;
             firstSel = this; //the div that is selected.  see line 33.
             return; // function returns the first selection and applies the class change and awaits for second selection
