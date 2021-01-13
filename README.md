@@ -31,6 +31,10 @@ References:
 
 - w3schools.com used often for various information related to syntax and definitions and function.
 
+Approach:
+I started out trying to hardcode all the variables, objects, and eventListeners.  I ran into an impedement which was taking too long resolve (given the time remaining for the project).  I ended up refactoring and using a much more simple path.  Using divs and data attributes I made the structure of two stacked divs.  The top div becomes transparent to display the letter on the bottom div.  This project has taught me the importance of pseudo code and researching prior to building up a javaScript file.  I also learned how to better debug my code and further strengthened my understanding of how the code is behaving.
+
+
 Stretch Goals:
 1) Cards randomly sorted - silver
 2)	Score points for correct pair - silver
